@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom React App</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+    <pre>
+        const ReactElement = React.createElement(
+
+'a',
+{href:"https://google.com",target:'_blank'},
+'Click to visit google'
+
+)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  ReactElement
+)
+
+
+So this is how react takes our element by transpiler like babel or vite and renders 
+    </pre>
+    <script src="./CustomReact.js"></script>
+</body>
+
+</html>

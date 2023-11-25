@@ -1,0 +1,44 @@
+
+install node lts one and it will install  npm too 
+
+npx creat-react-app appname no spaces
+npx creat-react-app myapp 
+npm, or npx npx will save memory 
+
+it will put all the files like package.json , .gitignore ,src ,public , node modules in this myapp folder 
+
+npx creat-react-app  . if i do something like this it will put all the files in those path , and not in a folder 
+
+once myapp is done we can cd my app and npm start to run the project 
+
+You can now view my-app in the browser.
+
+  Local:            http://localhost:3000        
+  On Your Network:  http://192.168.135.233:3000  
+
+
+and to build the project we have use this command npm run build.
+
+Note that the development build is not optimized.
+To create a production build, use npm run build. 
+
+
+Folder structure files explained
+1 node modules all our dependency are downloaded there
+2 readme.md a markdown project detail file
+3  package.json and package-lock.json all the dependency defined 
+4 .gitignore what and all not to be pushed in git repo
+5 src folder all our code / custom components which has props and state go there 
+6 public folder 
+ has index .html 
+div with .root id empy element. this has fav.icon added
+and in this elemnt we will populate the element by javascript and we should not touch this  , we can add bootstrap , and our code will go in src this index.html is important file rest files in thise are not important
+src folderindex.js is entry point this has react code where we take react components are there
+
+app.js we are giving to index.js which will add in index.html empty div 
+
+we can add custom components in app.js 
+
+components can be class based component and function based component 
+
+
