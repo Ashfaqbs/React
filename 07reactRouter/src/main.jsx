@@ -12,6 +12,8 @@ import Github, { githubInfoLoader } from './components/github/github.jsx'
 import User from './components/User/User.jsx'
 import Sonu from './components/Sonu/Sonu.jsx'
 import ErrorRoutes from './components/ErrorRoutes/ErrorRoutes.jsx'
+import LoginForm from './components/Login/Login.jsx'
+import AccessDenied from './components/AccessDenied/AccessDenied.jsx'
 
 // const routers = createBrowserRouter([
 
@@ -63,6 +65,9 @@ const routers = createBrowserRouter(
       <Route path='/about/sonu' element={<Sonu />} />
       <Route path='projects' element={<Project />} />
       <Route path='contacts' element={<Contact />} />
+      <Route path='login' element={<LoginForm />} />
+      <Route path='accessDenied' element={<AccessDenied />} />
+
       <Route
         path='github'
         loader={githubInfoLoader}

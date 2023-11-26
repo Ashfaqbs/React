@@ -14,9 +14,13 @@ function Github() {
   return (<>
     <p>Name : {gitdata?.name}</p>
 
-    <div className='text-center m-4 text-white bg-gray-600 p-4 text-3xl '>Github followers: {gitdata.followers} </div>
+    <div className='text-center m-4 text-white bg-gray-600 p-4 text-3xl '>Github followers: {gitdata.followers}    </div>
     {gitdata.avatar_url && <img src={gitdata.avatar_url} alt="gitimage" className='w-50 h-15' />}
+    
+
+
     //simple condition rendering
+    <br />
     <strong>{gitdata.bio}</strong>
 
   </>
