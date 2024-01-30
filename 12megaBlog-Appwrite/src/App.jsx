@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import './App.css'
 import authService from './appwrite/auth'
+import { login, logout } from './store/authSlice'
 
 function App() {
 
@@ -12,10 +13,18 @@ function App() {
 
   useEffect(() => {
     authService.getCurrentUser()
-      .then((userData)=>{
+      .then((userData) => {
+
+        if (userData) {
+          dispatch(login({ userData }))
+        } else {
+          dispatch(logout())
+        }
 
       })
-      .finally()
+      .finally(() => {
+        setloading(false)
+      })
   }, [])
 
   return (
